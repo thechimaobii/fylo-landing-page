@@ -1,0 +1,442 @@
+@font-face {
+    font-family: Raleway;
+    src: url(https://fonts.google.com/specimen/Raleway);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(https://fonts.google.com/specimen/Open+Sans);
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    margin: auto;
+    padding: 2em 2em;
+    display: flex;
+    height: fit-content;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.logo img{
+    width: 120px;
+    height: auto;
+
+}
+
+.menu{
+    display: flex;
+    gap: 1em;
+    height: fit-content;
+    align-self: center;
+}
+
+.menu h3{
+    font-family: Raleway, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsl(243, 87%, 12%);
+}
+
+main{
+    margin: 0 2.5em;
+}
+
+.hero-copy{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.hero-pic{
+    width: 25em;
+    height: auto;
+}
+
+
+.hero-text h2{
+    font-family: Raleway, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: hsl(243, 87%, 12%);
+    text-align: center;
+    margin: 2em 0 0 0;
+}
+
+.hero-text p{
+    margin: 2em 0 0 0;
+    font-family: 'Open Sans';
+    text-align: center;
+    font-size: 18px;
+}
+
+.reg-email{
+    margin: 2em 0;
+
+}
+
+
+
+.email-box{
+    font-family: 'Open Sans';
+    text-align: left;
+    padding: 1em 0em;
+    color: black;
+    min-width: 100%;
+    text-indent: 1em;
+    border: 1px black solid;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button{
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    border: 1px hsl(224, 93%, 58%) solid;
+    border-radius: 5px;
+    font-family: 'Open Sans';
+    min-width: 100%;
+    padding: 1em;
+    font-size: 18px;
+    margin-top: 1em;
+}
+
+.sec-two{
+    background-image: url(images/bg-curve-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10em 0 0 0;
+    margin: 0;
+    padding: 0;
+}
+
+.productive{
+    background-image: url(images/bg-curve-mobile.svg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10em 2.5em 0 2.5em;
+    height: fit-content;
+}
+
+.hero-pic-two{
+    width: 20em;
+    height: auto;
+    margin-top: 5em;
+}
+
+.productive > h2{
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    flex-wrap: nowrap;
+    font-weight: 700;
+    color: hsl(243, 87%, 12%);
+    text-align: center;
+    margin: 2em 0 0 0;
+}
+
+.productive p{
+    margin: 0;
+    font-family: 'Open Sans';
+    text-align: center;
+    font-size: 18px;
+    margin: 2em 0 0 0;
+    text-align: left;
+}
+
+.link{
+    border-bottom: 3px solid rgb(4, 158, 94);
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 0.5em;
+    margin-top: 1em;
+}
+
+.link > h3{
+    color: rgb(4, 158, 94);
+    font-family: 'Open Sans';
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.link > img{
+    width: 30px;
+    height: 30px;
+}
+
+.card{
+    border-radius: 5px;
+    box-shadow: 3px 5px 30px rgb(196, 196, 196);
+    padding: 2em 2em;
+    margin: 4em 0 6em 0;
+}
+
+/* .card > h1{
+    font-family: Arial;
+    font-size: 60px;
+    color: hsl(243, 87%, 12%);
+    padding: 0;
+    position: absolute;
+    top: 0;
+ 
+} */
+
+.card > p{
+    font-size: 14px;
+    font-family: Raleway, 'Open Sans';
+    font-weight: 600;
+    color: hsl(243, 87%, 12%);
+    height: max-content;
+    line-height: 2em;
+    text-align: left;
+
+
+}
+
+.profile{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+
+}
+
+.profile > img{
+    border-radius: 50%;
+    width: 3em;
+    height: 3em;
+    margin: 1em 0;
+}
+
+.user-details{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 1em 0;
+}
+
+.user-details > h3{
+    font-family: 'Open Sans';
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    color: hsl(243, 87%, 12%);
+}
+
+.user-details > p{
+    font-family: 'Open Sans';
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    color: hsl(243, 87%, 12%);
+
+}
+
+
+.sec-three{
+    margin: 10em 0 0 0;
+    margin: 0;
+    padding: 0;
+}
+
+.early-access{
+    background-color: hsl(238, 22%, 44%);
+    padding: 4em 2em;
+    margin: 0 ;
+    
+}
+
+.early-access-content{
+    margin: 0 2em;
+    padding: 0;
+    color: #fff;
+}
+
+.early-access-content > h2{
+    color: #fff;
+    font-family: Raleway, sans-serif;
+    font-size: 20px;
+    flex-wrap: nowrap;
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.early-access-content > p{
+    font-family: 'Open Sans';
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+    margin: 0;
+}
+
+.early-email-access{
+    margin: 2em 3em;
+
+}
+
+footer{
+    background-color: hsl(243, 87%, 12%);
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    padding: 2em 0;
+}
+
+.fLogo{
+    padding: 2em 0 0 2em ;
+}
+
+.fPhone{
+    display: flex;
+    margin-left: 2em;
+    gap: 1em;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.fPhone > img{
+    height: 20px;
+}
+
+.fEmail{
+    display: flex;
+    margin-left: 2em;
+    gap: 1em;
+    align-items: center;
+    margin-top: 0;
+}
+
+.fEmail > img{
+    height: 20px;
+}
+
+.flinks{
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    margin-left: 2em;
+    margin-top: 3em;
+}
+
+.flinks-two{
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: 18px;
+    margin-top: 3em;
+    margin-left: 2em;
+
+}
+
+
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 2em;
+
+}
+.social-icon{
+    width: 2em;
+
+}
+
+
+
+@media screen and (min-width: 800px){
+    
+    .hero-copy{
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: left;
+        margin: 2em 4em 0 0;
+        gap: 5em;
+
+    }
+
+    .hero-text{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .hero-text > h2{
+        text-align: left;
+        max-width: 15em;
+        font-family: Raleway, sans-serif;
+        font-size: 40px;
+        font-weight: 700;
+        color: hsl(243, 87%, 12%);
+        margin: 2em 0 0 0;
+        line-height: 1.5em
+    }
+
+    .hero-text > p {
+        text-align: left;
+        max-width: 32em;
+        margin: 2em 0 0 0;
+        font-family: 'Open Sans';
+        font-size: 18px;
+        line-height: 1.5em;
+        
+    }
+
+
+    .hero-pic{
+        width: 40em;
+    }
+    
+    .reg-email{
+        margin: 3em 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+        align-items: center;
+    
+    }
+    
+    
+    
+    .email-box{
+        font-family: 'Open Sans';
+        text-align: left;
+        padding: 1em 5em 1em 0;
+        color: black;
+        min-width: fit-content;
+        text-indent: 1em;
+        border: 1px black solid;
+        border-radius: 3px;
+        font-size: 18px;
+    }
+    
+    button{
+        background-color: hsl(224, 93%, 58%);
+        color: #fff;
+        border: 1px hsl(224, 93%, 58%) solid;
+        border-radius: 5px;
+        font-family: 'Open Sans';
+        min-width: fit-content;
+        padding: 1em 3em;
+        font-size: 18px;
+        margin-top: 0;
+    }
+
+
+
+}
