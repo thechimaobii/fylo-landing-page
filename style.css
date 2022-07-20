@@ -55,11 +55,12 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 2em;
+    width: 100%;
 }
 
 .hero-pic{
-    width: 25em;
-    height: auto;
+    width: 20em;
+    height: max-content;
 }
 
 
@@ -121,13 +122,9 @@ button{
 }
 
 .productive{
-    background-image: url(images/bg-curve-mobile.svg);
-    background-size: cover;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-position: center;
-    background-repeat: no-repeat;
     margin: 10em 2.5em 0 2.5em;
     height: fit-content;
 }
@@ -138,7 +135,7 @@ button{
     margin-top: 5em;
 }
 
-.productive > h2{
+.productive-text > h2{
     font-family: Raleway, sans-serif;
     font-size: 20px;
     flex-wrap: nowrap;
@@ -148,7 +145,7 @@ button{
     margin: 2em 0 0 0;
 }
 
-.productive p{
+.productive-text p{
     margin: 0;
     font-family: 'Open Sans';
     text-align: center;
@@ -182,7 +179,8 @@ button{
     border-radius: 5px;
     box-shadow: 3px 5px 30px rgb(196, 196, 196);
     padding: 2em 2em;
-    margin: 4em 0 6em 0;
+    margin: 4em auto 6em auto;
+    max-width: 30em;
 }
 
 /* .card > h1{
@@ -285,7 +283,7 @@ button{
 }
 
 .early-email-access{
-    margin: 2em 3em;
+    margin: 2em 0;
 
 }
 
@@ -357,16 +355,34 @@ footer{
 
 
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 1000px){
+
+    body{
+        background-color: rgb(255, 255, 255);
+        padding: 0;
+        margin: 0;
+    }
+
+    nav{
+        margin: auto 2em;
+        padding: 2em 2em;
+        display: flex;
+        height: fit-content;
+        justify-content: space-between;
+        align-items: center;
+        
+    
+    }
     
     .hero-copy{
         position: relative;
         display: flex;
         flex-direction: row-reverse;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: left;
-        margin: 2em 4em 0 0;
+        margin: 2em 4em 0 2em;
         gap: 5em;
+        width: 100%;
 
     }
 
@@ -384,7 +400,9 @@ footer{
         font-weight: 700;
         color: hsl(243, 87%, 12%);
         margin: 2em 0 0 0;
-        line-height: 1.5em
+        line-height: 1.5em;
+        word-wrap: break-word;
+        
     }
 
     .hero-text > p {
@@ -394,12 +412,15 @@ footer{
         font-family: 'Open Sans';
         font-size: 18px;
         line-height: 1.5em;
+        word-wrap: break-word;
         
     }
 
 
     .hero-pic{
         width: 40em;
+        height: max-content;
+        margin-right: 3em;
     }
     
     .reg-email{
@@ -438,5 +459,256 @@ footer{
     }
 
 
+    .sec-two{
+        background-image: url(images/bg-curve-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 10em 0 0 0;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .productive{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        justify-content: left;
+        margin: 10em 4em 0 4em;
+        height: fit-content;
+        padding-top: 5em;
+        gap: 5em;
+        align-items: flex-start;
+    }
+
+    .hero-pic-two{
+        width: 40em;
+        height: max-content;
+        margin-top: 5em;
+    }
+    
+    .productive-text > h2{
+        font-family: Raleway, sans-serif;
+        font-size: 30px;
+        flex-wrap: nowrap;
+        font-weight: 700;
+        color: hsl(243, 87%, 12%);
+        text-align: left;
+        margin: 2em 0 0 0;
+    }
+    
+    .productive-text p{
+        margin: 0;
+        font-family: 'Open Sans';
+        text-align: left;
+        font-size: 18px;
+        margin: 2em 0 0 0;
+        text-align: left;
+        max-width: 33em;
+    }
+
+    .card{
+        border-radius: 5px;
+        box-shadow: 3px 5px 30px rgb(196, 196, 196);
+        padding: 2em 2em;
+        margin: 4em 0 6em 0;
+        width: 18em;
+    }
+    
+    .card > h3{
+        font-family: 'Arial';
+        font-style: italic;
+        font-size: 30px;
+        color: hsl(243, 87%, 12%);
+        padding: 0;
+     
+    }
+    
+    .card > p{
+        font-size: 14px;
+        font-family: Raleway, 'Open Sans';
+        font-weight: 600;
+        color: hsl(243, 87%, 12%);
+        height: max-content;
+        line-height: 2em;
+        text-align: left;
+    
+    
+    }
+    
+    .profile{
+        display: flex;
+        gap: 1em;
+        align-items: center;
+    
+    }
+    
+    .profile > img{
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        margin: 1em 0;
+    }
+    
+    .user-details{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+        padding: 1em 0;
+    }
+    
+    .user-details > h3{
+        font-family: 'Open Sans';
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        color: hsl(243, 87%, 12%);
+    }
+    
+    .user-details > p{
+        font-family: 'Open Sans';
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+        color: hsl(243, 87%, 12%);
+    
+    }
+
+    .sec-three{
+        margin: 10em 0 0 0;
+        padding: 0;
+    }
+    
+    .early-access{
+        background-color: hsl(238, 22%, 44%);
+        padding: 4em 2em;
+        margin: 0 ;
+        display: flex;
+        gap: 10em;
+        
+    }
+    
+    .early-access-content{
+        margin: 0 2em;
+        padding: 0;
+        color: #fff;
+    }
+    
+    .early-access-content > h2{
+        color: #fff;
+        font-family: Raleway, sans-serif;
+        font-size: 30px;
+        flex-wrap: nowrap;
+        font-weight: 700;
+        text-align: left;
+    
+    }
+    
+    .early-access-content > p{
+        font-family: 'Open Sans';
+        padding: 0;
+        text-align: left;
+        font-size: 18px;
+        margin: 0;
+        max-width: 31em;
+        line-height: 2em;
+    }
+    
+    .early-email-access{
+        margin: 2em 0;
+        display: flex;
+        flex-direction: column;
+    
+    }
+
+    .early-email-access > input,
+    .early-email-access > button{
+        margin-top: 1em;
+    }
+
+    .early-email-access > button{
+        width: 1em;
+    }
+
+    .early-email-access > input{
+        width: 30em;
+    }
+
+    footer{
+        background-color: hsl(243, 87%, 12%);
+        color: #fff;
+        font-family: 'Open Sans';
+        font-size: 18px;
+        padding: 2em 2em 6em 2em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-items: flex-start;
+        column-gap: 10em;
+
+    }
+
+    .fLogo{
+        padding: 2em 0 0 2em ;
+        padding-right: 100vh;
+
+    }
+    
+    .fPhone{
+        display: flex;
+        margin-left: 2em;
+        gap: 1em;
+        align-items: center;
+        margin-top: 2em;
+    }
+    
+    .fPhone > img{
+        height: 20px;
+    }
+    
+    .fEmail{
+        display: flex;
+        margin-left: 2em;
+        gap: 1em;
+        align-items: center;
+        margin-top: 0;
+    }
+    
+    .fEmail > img{
+        height: 20px;
+    }
+    
+    .flinks{
+        color: #fff;
+        font-family: 'Open Sans';
+        font-size: 18px;
+        margin-left: 2em;
+        margin-top: 2em;
+    }
+    
+    .flinks-two{
+        color: #fff;
+        font-family: 'Open Sans';
+        font-size: 18px;
+        margin-top: 2em;
+        margin-left: 2em;
+    
+    }
+    
+    
+    .socials{
+        display: flex;
+        justify-content: center;
+        gap: 1.5em;
+        margin-top: 3em;
+        margin-left: 2em;
+        padding: 0;
+    
+    }
+    .social-icon{
+        width: 2em;
+    
+    }
 
 }
