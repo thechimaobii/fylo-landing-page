@@ -160,7 +160,7 @@ button{
     width: fit-content;
     align-items: center;
     gap: 0.5em;
-    margin-top: 1em;
+    margin: 2em auto;
 }
 
 .link > h3{
@@ -364,7 +364,7 @@ footer{
     }
 
     nav{
-        margin: auto 2em;
+        margin: auto 4em;
         padding: 2em 2em;
         display: flex;
         height: fit-content;
@@ -374,15 +374,20 @@ footer{
     
     }
     
+    main{
+        margin: 0 6em;
+    }
+
     .hero-copy{
         position: relative;
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: nowrap;
-        justify-content: left;
-        margin: 2em 4em 0 2em;
+        justify-content: space-between;
+        margin: 2em 0;
         gap: 5em;
         width: 100%;
+        align-items: center;
 
     }
 
@@ -390,6 +395,7 @@ footer{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+        margin: 0;
     }
 
     .hero-text > h2{
@@ -418,9 +424,12 @@ footer{
 
 
     .hero-pic{
-        width: 40em;
+        width: 50%;
         height: max-content;
-        margin-right: 3em;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-shrink: 0;
     }
     
     .reg-email{
@@ -477,12 +486,12 @@ footer{
         margin: 10em 4em 0 4em;
         height: fit-content;
         padding-top: 5em;
-        gap: 5em;
+        gap: 10em;
         align-items: flex-start;
     }
 
     .hero-pic-two{
-        width: 40em;
+        width: 50%;
         height: max-content;
         margin-top: 5em;
     }
@@ -505,6 +514,15 @@ footer{
         margin: 2em 0 0 0;
         text-align: left;
         max-width: 33em;
+    }
+
+    .link{
+        border-bottom: 3px solid rgb(4, 158, 94);
+        display: flex;
+        width: fit-content;
+        align-items: center;
+        gap: 0.5em;
+        margin: 2em 0;
     }
 
     .card{
@@ -585,7 +603,9 @@ footer{
         padding: 4em 2em;
         margin: 0 ;
         display: flex;
+        flex-wrap: wrap;
         gap: 10em;
+        row-gap: 2em;
         
     }
     
@@ -616,7 +636,7 @@ footer{
     }
     
     .early-email-access{
-        margin: 2em 0;
+        margin: 2em 2em;
         display: flex;
         flex-direction: column;
     
@@ -633,6 +653,15 @@ footer{
 
     .early-email-access > input{
         width: 30em;
+
+        font-family: 'Open Sans';
+        text-align: left;
+        padding: 1em 0em;
+        color: black;
+        text-indent: 1em;
+        border: 1px black solid;
+        border-radius: 5px;
+        font-size: 18px;
     }
 
     footer{
@@ -651,7 +680,7 @@ footer{
 
     .fLogo{
         padding: 2em 0 0 2em ;
-        padding-right: 100vh;
+        margin-right: 100%;
 
     }
     
